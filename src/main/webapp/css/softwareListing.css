@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #1d3557, #457b9d, #a8dadc);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container-listing {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title-listing {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.btn-create-container {
+    text-align: right;
+}
+
+.btn-create-software {
+    padding: 10px 20px;
+    background-color: #457b9d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create-software:hover {
+    background-color: #1d3557;
+}
+
+.software-info {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 15px;
+    background-color: #ffcc00;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #457b9d;
+    outline: none;
+}
+
+.software-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+.software-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Added transition for background and text color */
+    text-align: center;
+}
+
+.software-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #457b9d; /* Hover background color */
+    color: #ffffff; /* Hover text color */
+}
+
+.software-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Transition added for text color change */
+}
+
+.software-card:hover .software-name {
+    color: #ffffff; /* Change text color to white on hover */
+}
+
+.software-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Transition for description text color */
+}
+
+.software-card:hover .software-description {
+    color: #f1f1f1; /* Lighter color for description on hover */
+}
+
+.access-levels {
+    font-size: 1rem;
+    color: #457b9d;
+    transition: color 0.3s ease; /* Transition for access levels color change */
+}
+
+.software-card:hover .access-levels {
+    color: #ffffff; /* Change color to white on hover */
+}
+
+
+.software-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.software-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.access-levels {
+    font-size: 1rem;
+    color: #457b9d;
+}
+
+@media screen and (max-width: 768px) {
+    .title-listing {
+        font-size: 1.8rem;
+    }
+    .btn-create-software {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .software-name {
+        font-size: 1.2rem;
+    }
+    .software-description,
+    .access-levels {
+        font-size: 0.9rem;
+    }
+    .search-bar {
+        font-size: 0.9rem;
+    }
+}

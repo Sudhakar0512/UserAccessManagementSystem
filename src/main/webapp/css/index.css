@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #1d3557, #457b9d, #a8dadc);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    animation: fadeInUp 0.3s ease-in-out;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.3s ease-in-out;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555555;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.primary {
+    background-color: #457b9d;
+    color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(69, 123, 157, 0.5);
+}
+
+.button.primary:hover {
+    transform: scale(1.05);
+    background-color: #1d3557;
+}
+
+.button.secondary {
+    border: 2px solid #457b9d;
+    color: #457b9d;
+    background-color: transparent;
+}
+
+.button.secondary:hover {
+    transform: scale(1.05);
+    background-color: #f1faee;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.table-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.table-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #457b9d;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Status Colors */
+.status-approved {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.status-rejected {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Button Styles */
+button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-approve:hover {
+    background-color: #218838;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-reject:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .table-container {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .table-title {
+        font-size: 1.2rem;
+    }
+}
